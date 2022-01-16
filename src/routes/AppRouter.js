@@ -1,0 +1,21 @@
+import { lazy, Suspense } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Loader from '../components/global/Loader'
+
+const HomePage = lazy(() => import('../pages/HomePage'))
+const Menu = lazy(() => import('../pages/Menu'))
+const NotFound = lazy(() => import('../pages/NotFound'))
+
+export const AppRouter = () => {
+	return (
+		<BrowserRouter>
+			<Suspense fallback={<Loader />}>
+				<Routes>
+					<Route path='/' element={<HomePage />} />
+					<Route path='/menu' element={<Menu />} />
+					<Route path='*' element={<NotFound />} />
+				</Routes>
+			</Suspense>
+		</BrowserRouter>
+	)
+}
