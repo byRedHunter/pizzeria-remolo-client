@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Loader from '../components/global/Loader'
+import Loader from '../components/Loader'
 
 const HomePage = lazy(() => import('../pages/HomePage/index'))
 const Menu = lazy(() => import('../pages/Menu/index'))

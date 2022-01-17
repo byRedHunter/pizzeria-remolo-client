@@ -1,0 +1,18 @@
+.social {
+	display: flex;
+	align-items: center;
+	column-gap: 16px;
+}
+.socialItem {
+	height: 52px;
+	width: 52px;
+	background: transparent;
+	border-radius: 50%;
+	border: 2px solid var(--color-primary);
+}
+.socialItem a {
+	height: 100%;
+	width: 100%;
+	display: grid;
+	place-items: center;
+}
