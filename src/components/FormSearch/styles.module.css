@@ -1,0 +1,26 @@
+.special {
+	font-size: 24px;
+	color: var(--color-light);
+	font-weight: 500;
+}
+.formInput {
+	position: relative;
+	margin-top: 16px;
+	display: grid;
+	grid-template-columns: 1fr 40px;
+}
+.formInput input {
+	border-radius: 4px 0 0 4px;
+}
+.formSearch button {
+	height: 40px;
+	width: 40px;
+	border-radius: 0 4px 4px 0;
+	background: var(--color-primary);
+	color: var(--color-light);
+	display: grid;
+	place-items: center;
+}
+.formSearch button i {
+	font-size: 24px;
+}

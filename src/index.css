@@ -39,3 +39,48 @@ body {
 	background: var(--color-cream);
 	color: var(--color-secondary);
 }
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+input {
+	height: 40px;
+	width: 100%;
+	border-radius: 4px;
+	background: var(--color-light);
+	border: none;
+	padding: 10px 12px;
+	color: var(--color-dark);
+	outline: none;
+}
+input:focus {
+	box-shadow: 0 0 5px 0 var(--color-primary);
+}
+input::placeholder {
+	color: #909090;
+}
+
+i {
+	font-size: 24px;
+	color: var(--color-light);
+}
+
+.title {
+	font-family: var(--font-title);
+}
+
+.wrapper {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
