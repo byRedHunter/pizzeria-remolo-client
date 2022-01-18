@@ -70,11 +70,17 @@ input::placeholder {
 	color: #909090;
 }
 
+i {
+	font-size: 24px;
+	color: var(--color-light);
+}
+
 .title {
 	font-family: var(--font-title);
 }
 
-i {
-	font-size: 24px;
-	color: var(--color-light);
+.wrapper {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
 }

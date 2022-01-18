@@ -21,48 +21,52 @@ const Footer = () => {
 				/>
 			</svg>
 			<section className={style.footerContent}>
-				<div className={style.footerSocial}>
-					<h2 className='title'>Don Remolo</h2>
-					<Social />
+				<div className={`wrapper ${style.footerContentInfo}`}>
+					<div className={style.footerSocial}>
+						<h2 className='title'>Don Remolo</h2>
+						<Social />
+					</div>
+
+					<ul className={style.footerOur}>
+						<li className={`${style.footerListItem} ${style.special}`}>
+							Nosotros
+						</li>
+						<li className={style.footerListItem}>
+							<a href='#buy'>Como Comprar</a>
+						</li>
+						<li className={style.footerListItem}>
+							<a href='#buy'>Nuestros Productos</a>
+						</li>
+						<li className={style.footerListItem}>
+							<a href='#buy'>Nuestra Historia</a>
+						</li>
+						<li className={style.footerListItem}>
+							<a href='#buy'>Encuentranos en</a>
+						</li>
+					</ul>
+
+					<ul className={style.footerCategories}>
+						<li className={`${style.footerListItem} ${style.special}`}>
+							Categorias
+						</li>
+						<li className={style.footerListItem}>
+							<a href='#buy'>Deliciosas Pizzas</a>
+						</li>
+						<li className={style.footerListItem}>
+							<a href='#buy'>Empanadas Doraditas</a>
+						</li>
+						<li className={style.footerListItem}>
+							<a href='#buy'>Los Mejores Postres</a>
+						</li>
+						<li className={style.footerListItem}>
+							<a href='#buy'>Disfruta de las Bebidas</a>
+						</li>
+					</ul>
+
+					<div className={style.footerSearch}>
+						<FormSearch />
+					</div>
 				</div>
-
-				<ul className={style.footerOur}>
-					<li className={`${style.footerListItem} ${style.special}`}>
-						Nosotros
-					</li>
-					<li className={style.footerListItem}>
-						<a href='#buy'>Como Comprar</a>
-					</li>
-					<li className={style.footerListItem}>
-						<a href='#buy'>Nuestros Productos</a>
-					</li>
-					<li className={style.footerListItem}>
-						<a href='#buy'>Nuestra Historia</a>
-					</li>
-					<li className={style.footerListItem}>
-						<a href='#buy'>Encuentranos en</a>
-					</li>
-				</ul>
-
-				<ul className={style.footerCategories}>
-					<li className={`${style.footerListItem} ${style.special}`}>
-						Categorias
-					</li>
-					<li className={style.footerListItem}>
-						<a href='#buy'>Deliciosas Pizzas</a>
-					</li>
-					<li className={style.footerListItem}>
-						<a href='#buy'>Empanadas Doraditas</a>
-					</li>
-					<li className={style.footerListItem}>
-						<a href='#buy'>Los Mejores Postres</a>
-					</li>
-					<li className={style.footerListItem}>
-						<a href='#buy'>Disfruta de las Bebidas</a>
-					</li>
-				</ul>
-
-				<FormSearch />
 			</section>
 		</footer>
 	)
