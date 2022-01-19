@@ -23,7 +23,7 @@ const Footer = () => {
 			<section className={style.footerContent}>
 				<div className={`wrapper ${style.footerContentInfo}`}>
 					<div className={style.footerSocial}>
-						<h2 className='title'>Don Remolo</h2>
+						<h2 className='title'>Pizzeria Don Remolo</h2>
 						<Social />
 					</div>
 
